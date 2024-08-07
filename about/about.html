@@ -13,7 +13,7 @@
         <meta name="google-site-verification" content="y1iOaVdSYWhaKVpLh-rmhnUzFcRFMgjberJk_ULj32E"/>
         <meta property="og:title" content="Victor Adewale - Software Engineer (ML)"/>
         <meta property="og:type" content="website"/>
-        <link rel="icon" href="icon.png" sizes="80x80"/>
+        <link rel="icon" href="/icon.png" sizes="80x80"/>
         <meta property="og:url" content="https://victoradewal.net"/>
         <meta property="og:image" content="/_next/static/media/ife.431bf3c2.png"/>
         <meta property="og:description" content="Software Engineer (ML), CS (Artificial Intelligence &amp; Data Science) + Math."/>
@@ -25,11 +25,12 @@
         <meta name="next-size-adjust"/>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&amp;family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;family=Nanum+Pen+Script&amp;family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-        <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" noModule=""></script>
+        <!-- <script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" noModule=""></script> -->
+        <script defer src="/script.js"></script>
     </head>
     <body class="__className_aaf875">
         <div class="app">
-            <nav>
+            <nav class="">
                 <div class="logo">
                     <img src="/var.png" alt=""/>
                     <div class="name">
@@ -41,7 +42,7 @@
                     <a class="" href="/home.html">
                         <label for="">Home</label>
                     </a>
-                    <a class="active" href="#">
+                    <a class="active" href="about.html">
                         <label for="">About</label>
                     </a>
                     <a class="" href="/research/research.html">
@@ -52,23 +53,27 @@
                     </a>
                 </div>
                 <div class="right-stuff">
-                    <div class="empty">
+                    <div class="empty" onclick="toggleMenu()">
                         <div class="green"></div>
                         <div class="label">
                             an attempt <span>at being.</span>
                         </div>
                     </div>
-                    <div class="menu-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                            <path d="M3 7h18M3 12h18M3 17h18" stroke="#555" stroke-width="1.5" stroke-linecap="round"></path>
-                        </svg>
-                    </div>
                 </div>
+
+                <button class="navbar-burger none" onclick="toggleMenu()"></button>
+                <nav class="menu none">
+                  <a href="/home.html" style="animation-delay: 0.1s">Home</a>
+                  <a href="about.html" style="animation-delay: 0.2s">About</a>
+                  <a href="/research/research.html" style="animation-delay: 0.3s">Research</a>
+                  <a href="/projects/projects.html" style="animation-delay: 0.4s">Projects</a>
+                </nav>
+    
             </nav>
 
             <div class="body slide-up">
                 <div class="top">
-                    <div class="name">Afuwape Adewale Victor</div>
+                    <div class="name">Adewale Victor. (xisvar)</div>
                     <div class="bio">
                         <!-- CS + Math Major @  -->
                          Software Engineering Fellow @
@@ -80,22 +85,25 @@
                 </div>
                 <div class="about-content">
                     <div class="about-img">
-                        <img src="/images/k.jpg" alt="Victor Adewal">
+                        <img src="/images/x.jpg" alt="Victor Adewal">
                         <label for="">
-                            Apple HQ, Cupertino, California / 
-                            <a target="_blank" href="https://www.youtube.com/watch?v=FzcfZyEhOoI">Apple Park<span>↗</span></a>
+                            Tekart's Arcade, Lagos / 
+                            <a target="_blank" href="https">Shodex Garden<span>↗</span></a>
                         </label>
                     </div>
                     <div class="about-victor">
                         <p>
-                            I am a software engineer with a background in computer science and mathematics. I am currently an undergraduate student at Morgan State University, pursuing a Bachelors degree in Computer Science with a focus on Artificial Intelligence and Deep Learning.
-                            <br><br>Currently, I mainly work with Core ML + Scalable Backend Systems (API/MicroServices/DB).
-                            <br><br>Another of many technical skillsets is Fullstack Development - (Web + Mobile - Native, ReactNatve & SwiftUI) - creating impressive (UI), Fast (Performance) and Scalable (Backend) applications, some even integrated with machine learning systems.
-                            <br><br>Big fan of opensource development, i have built several libraries, modules, packages & tools, in database, networking systems, algorithms, web-frameworks & machine learning/ai fields all opensourced 
-                            <a href="https://github.com/victoroweh">Github - @victoroweh<span>↗</span></a>
-                            <br><br>Die hard ping pong player and leetcode solver.
+                            I am an aspiring ML software engineer seeking a degree in computer science and philosophy. I am currently an incoming freshman at State University, pursuing a Bachelors degree in Computer Science with a focus on Artificial Intelligence and Deep Learning.
+                            <br><br>Currently, I mainly work with User Interfaces, Algorithms & Data Structures.
+                            <!-- <br><br>With my plethora of academic & technical skillsets, I am what you'd call an indie hacker - (Web + Mobile + Math + Literature) - creating impressive (UI), Fast (Performance) and Scalable applications, looking to integrate somethings with machine learning systems someday. -->
+                            <br><br>Big fan of good literature too. i have written some, myself. Several poems, essays, journals, documents, books, and drafts yet to meet the public eye, yet to be published.
+                            <br>
+                            <br> 
+                            <a href="https://github.com/xisvar">Github - @VictorAdewal<span>↗</span></a>
+                            <a href="https://xisvariable.medium.com/">Medium<span>↗</span></a>
+                            <br><br>Chad chess player and deep thinker.
                         </p>
-                        <a class="viewbtn" href="research">Research <span>↗</span></a>
+                        <a class="viewbtn" href="/research/research.html">Research <span>↗</span></a>
                     </div>
                 </div>
             </div>
@@ -129,7 +137,7 @@
             </footer>
         </div>
         
-        <script src="/_next/static/chunks/webpack-e5b1f2925d40f085.js" crossorigin="" async=""></script>
+        <!-- <script src="/_next/static/chunks/webpack-e5b1f2925d40f085.js" crossorigin="" async=""></script>
         <script>
             (self.__next_f = self.__next_f || []).push([0]);
             self.__next_f.push([2, null])
@@ -151,6 +159,6 @@
         </script>
         <script>
             self.__next_f.push([1, ""])
-        </script>
+        </script> -->
     </body>
 </html>
