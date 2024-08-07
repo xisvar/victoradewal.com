@@ -14,7 +14,7 @@
         <meta name="google-site-verification" content="y1iOaVdSYWhaKVpLh-rmhnUzFcRFMgjberJk_ULj32E"/>
         <meta property="og:title" content="Victor Adewale - Software Engineer (ML)"/>
         <meta property="og:type" content="website"/>
-        <link rel="icon" href="icon.png" sizes="80x80"/>
+        <link rel="icon" href="/icon.png" sizes="80x80"/>
         <meta property="og:url" content="https://victoradewal.net"/>
         <meta property="og:image" content="/image/k.jpg"/>
         <meta property="og:description" content="Software Engineer (ML), CS (Artificial Intelligence &amp; Data Science) + Math."/>
@@ -26,65 +26,70 @@
         <meta name="next-size-adjust"/>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&amp;family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;family=Nanum+Pen+Script&amp;family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+        <script defer src="/script.js"></script>
     </head>
     <body class="__className_aaf875">
         <div class="app">
-            <nav>
-                <div class="logo">
-                    <img src="/var.png" alt=""/>
-                    <div class="name">
-                        <label for="">Victor Adewal</label>
-                        <span>Software Engineer & ML Enthusiast</span>
+          <nav class="">
+            <div class="logo">
+                <img src="/var.png" alt=""/>
+                <div class="name">
+                    <label for="">Victor Adewal</label>
+                    <span>Software Engineer & ML Enthusiast</span>
+                </div>
+            </div>
+            <div class="links">
+                <a class="" href="/home.html">
+                    <label for="">Home</label>
+                </a>
+                <a class="" href="/about/about.html">
+                    <label for="">About</label>
+                </a>
+                <a class="active" href="research.html">
+                    <label for="">Research</label>
+                </a>
+                <a class="" href="/projects/projects.html">
+                    <label for="">Projects</label>
+                </a>
+            </div>
+            <div class="right-stuff">
+                <div class="empty" onclick="toggleMenu()">
+                    <div class="green"></div>
+                    <div class="label">
+                        an attempt <span>at being.</span>
                     </div>
                 </div>
-                <div class="links">
-                  <a class="" href="/home.html">
-                      <label for="">Home</label>
-                  </a>
-                  <a class="" href="/about/about.html">
-                      <label for="">About</label>
-                  </a>
-                  <a class="active" href="#">
-                      <label for="">Research</label>
-                  </a>
-                  <a class="" href="/projects/projects.html">
-                      <label for="">Projects</label>
-                  </a>
-              </div>
-                <div class="right-stuff">
-                    <div class="empty">
-                        <div class="green"></div>
-                        <div class="label">
-                            an attempt <span>at being.</span>
-                        </div>
-                    </div>
-                    <div class="menu-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                            <path d="M3 7h18M3 12h18M3 17h18" stroke="#555" stroke-width="1.5" stroke-linecap="round"></path>
-                        </svg>
-                    </div>
-                </div>
+            </div>
+
+            <button class="navbar-burger none" onclick="toggleMenu()"></button>
+            <nav class="menu none">
+              <a href="/home.html" style="animation-delay: 0.1s">Home</a>
+              <a href="/about/about.html" style="animation-delay: 0.2s">About</a>
+              <a href="research.html" style="animation-delay: 0.3s">Research</a>
+              <a href="/projects/projects.html" style="animation-delay: 0.4s">Projects</a>
             </nav>
+
+        </nav>
             <div class="body slide-up">
               <div class="top">
                 <div class="name">Research</div>
                 <div class="bio">
-                  Victor is very versatile when it comes to research - primary focus on Core ML, Reinforcement &amp; Deep Learning Models - but I have used my technical prowess to solve problems in other fields like Quantum Computing, Data Science &amp; Analysis, Aerospace + System Engineering and more.
+                  Victor is very versatile when it comes to research - I primarily focus on Sustainability, Reinforcement Cognition &amp; Tech (AI/ML) - but I look to use my technical prowess to solve problems in other fields like Education, Finance, Healthcare, Data Science &amp; Analysis, Aerospace + System Engineering and more.
                 </div>
               </div>
               <div class="research-content">
                 <div class="research-img">
                   <img width="400" height="400" src="/images/l.jpg" alt="Victor Adewal Research">
-                  <label for="">Tarleton Pers Research Symposium '23 / <a target="_blank" href="https://www.tarleton.edu/president/about-dr-hurley-2/">Dr. James Hurley<span>↗</span></a></label>
+                  <label for="">Lagos State University of Science And Technology Research Symposium/ <a target="_blank" href="https://lausutech.edu.ng/">Dr.<span>↗</span></a></label>
                 </div>
                 <div class="research-list">
                   <div class="research-victor">
                     <div class="research-victor-content">
-                      <label for="">Dynamic Systems Modeling of Disease Propagation: Stochastic Network Processes with Differential Equation and Network Graph Theory</label>
+                      <label for="">Artificial Intelligence in Healthcare: Leveraging Artificial Intelligence for Early Disease Detection.</label>
                       <p>Leveraged stochastic processes on networks using differential equations to determine disease susceptibility rates and recovery probabilities, employing sophisticated mathematical and epidemiological models for better analysis and modelling of infectious diseases spread.</p>
                     </div>
                     <div class="research-victor-img">
-                      <img src="/images/i.jpg" alt="">
+                      <img src="/images/dar.jpg" alt="">
                     </div>
                   </div>
                   <hr>
@@ -94,14 +99,14 @@
                       <p>Developed a Spectral Decomposition-based algorithm integrating filter-wrapper techniques with feature clustering, utilizing the Rand Index cluster metric for enhanced selection precision. Employing multi-processing and parallel programming for high performance computational efficiency, rendering it ideal for real-world predictive models.</p>
                     </div>
                     <div class="research-victor-img">
-                      <img src="images/rd2.jpg" alt="">
+                      <img src="/images/rd2.jpg" alt="">
                     </div>
                   </div>
                   <hr>
                   <div class="research-victor">
                     <div class="research-victor-content">
                       <label for="">Radio Frequency-Enabled Camera System (Image Manipulation + Rendering) for Launch Vehicle</label>
-                      <p>Developed payload system for an automated radio frequency-enabled camera aboard a NASA USLI launch vehicle (sub-scale rocket, operating at an altitude of 6000 fts. Using demodulated telecommand signals from a SDR Receiver, the system efficiently executes image processing techniques with custom functions. A microcontroller, equipped with custom GPIO pin drivers, serves as the central processing unit, seamlessly integrating hardware components. The resulting camera system effectively utilizes radio frequency capabilities to trigger image processing algorithms, functioning reliably even at altitudes of 6,000 feet. Implementation involves signal demodulation within a UDP server architecture for streamlined data transmission and complex image processing operations in response to SDR receiver commands.</p>
+                      <p>Developed payload system for an automated radio frequency-enabled camera aboard a NASA USLI launch vehicle sub-scale rocket, operating at an altitude of 6000 fts . Using demodulated telecommand signals from a SDR Receiver, the system efficiently executes image processing techniques with custom functions. A microcontroller, equipped with custom GPIO pin drivers, serves as the central processing unit, seamlessly integrating hardware components. The resulting camera system effectively utilizes radio frequency capabilities to trigger image processing algorithms, functioning reliably even at altitudes of 6,000 feet. Implementation involves signal demodulation within a UDP server architecture for streamlined data transmission and complex image processing operations in response to SDR receiver commands.</p>
                     </div>
                     <div class="research-victor-img">
                       <img src="/images/r.jpg" alt="">
