@@ -594,11 +594,10 @@ center{
     .about-content{
         flex-wrap: wrap;
         .about-img{
+            display: block;
             margin-bottom: auto;
             img{
-                min-width: max-content;
                 width: 100%;
-
             }
         }
     }
