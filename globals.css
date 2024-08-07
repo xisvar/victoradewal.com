@@ -21,7 +21,8 @@ body{
     margin:0 !important;
     background: #fff;
     /*fbf7f0*/
-    scrollbar-width: .1; 
+    display: grid;
+    justify-content: center;
 }
 
 ::-webkit-scrollbar {
@@ -52,7 +53,7 @@ a{
 .slide-up{
   animation-name: slideFadeUp;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 .slide-up1{
@@ -92,8 +93,7 @@ a{
 /* Nav.css */
 
 .app {
-    position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     overflow: hidden;
   }
   
@@ -119,13 +119,11 @@ a{
     
   }
 nav{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 30px 60px;
-
     .right-stuff{
         display: flex;
         flex-direction: row;
@@ -146,6 +144,7 @@ nav{
             object-fit: cover;
             object-position:center;
             border-radius: 10px;
+            border-radius: 4%;
         }
         .name{
          display: flex;
@@ -196,7 +195,7 @@ nav{
         flex-direction: row;
         align-items: center;
         .green{
-            background-color: #38cbec;
+            background-color: #38b6ec;
  
         height: 8px;
         width: 8px;
@@ -222,7 +221,7 @@ footer{
     .footer-header{
         font-size:25px;
         font-family: "GT America";
-        font-weight: 500;
+        font-weight: 525;
 
     }
     .footer-content{
@@ -404,7 +403,7 @@ footer{
   
   @keyframes slideIn {
     from {
-      transform: translateX(100%);
+      transform: translateX(50%);
     }
     to {
       transform: translateX(0);
@@ -425,18 +424,18 @@ footer{
 
 /* Landing.css */
 .body{
-    padding: 30px 60px;
+    padding: 30px 70px;
     margin-top: 30px;
     .hero{
         .first{
             font-family: "Canela Web";
-        font-size: 50px;
-        margin-bottom: 20px;
+            font-size: 47px;
+            margin-bottom: 20px;
         }
         .second{
             font-family: "GT America";
-            font-size: 20px;
-            width: 73%;
+            font-size: 17px;
+            width: 70%;
             color: #212125;
             line-height: 1.4;
      
@@ -461,7 +460,114 @@ footer{
                 }
             }
         }
+        .flex{
+            display: flex;
+            width: 80vw;
+            justify-content: center;
+        }
     }
+}
+
+center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.about-content{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    width: 100%;
+    .slide-up{
+        animation-range: entry 0% cover 100%;
+    }
+    .about-img{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 300px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        label{
+            width: 100%;
+            font-family: "GT America";
+            font-size: 13px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            a{
+                border-style: solid;
+                border-width: 0px 0px 1px;
+                border-color: #222;
+                color: #000;
+                transition: 0.4s;
+                font-family: "GT America";
+                &:hover{
+                    transition: 0.4s;
+                    border-width: 0px 0px 2px;
+                    border-color: #333;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: system-ui;
+                }
+            }
+        }
+    }
+}
+
+.about-victor{
+    width: 40%;
+    padding: 20px 0px;
+    p{
+        font-family: "GT America";
+        font-size: 16px;
+        font-weight: 400;
+        a{
+            border-style: solid;
+            border-width: 0px 0px 1px;
+            border-color: #222;
+            transition: 0.4s;
+            text-decoration: none;
+            color: #000;
+          
+            span{
+                font-size: 14px;
+                font-family: system-ui;
+            }
+        }
+        padding-bottom: 20px;
+    }
+    a.viewbtn{
+        border-style: solid;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-width: 1px;
+        border-color: #222;
+        transition: 0.4s;
+        border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #000;
+        &:hover{
+            transition: 0.4s;
+            background-color: #333;
+            color: #fff;
+        }
+        span{
+            font-size: 14px;
+            font-family: system-ui;
+        }
+    }
+}
+.none{
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -484,5 +590,135 @@ footer{
             }
         }
     }
-    
+
+    .about-content{
+        flex-wrap: wrap;
+        .about-img{
+            margin-bottom: auto;
+            img{
+                min-width: max-content;
+                width: 120%;
+
+            }
+        }
+    }
+
+    .about-victor{
+        width: 100%;
+    }
+
+
 }
+
+  /* Navbar */  
+  button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar,
+  .navbar-burger,
+  .menu{
+    position: fixed;
+  }
+
+  
+  body.open .background {
+    filter: blur(20px);
+  }
+  
+  .navbar {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 72px;
+    background: #19191c;
+    color: #f9f9f9;
+  }
+  
+  .navbar > button {
+    font-size: 28px;
+  }
+  
+  .navbar-burger {
+    position: relative;
+    z-index: 3;
+    top: 5%;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 62px;
+    background-image: url("./assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  body.open .navbar-burger {
+    background-image: url("./assets/close.svg~");
+  }
+ 
+  .menu {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  body.open .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu > a {
+    color: #f9f9f9;
+    font-size: 32px;
+    font-weight: 55;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+  }
+  
+  body.open .menu > a {
+    animation: appear 0.3s both;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      translate: 0 50px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  .none{
+    display: none;
+  }
+
+
+
+  @media screen and (max-width: 725px){
+    .none{
+        display: flex;
+    }
+  }

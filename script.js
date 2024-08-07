@@ -7,3 +7,10 @@ function searchAction(search) {
     });
     setProjectList(filteredProjects);
 }
+
+const toggleMenu = () => {
+    document.body.classList.toggle("open");
+  };
+
+
+
