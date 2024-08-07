@@ -597,7 +597,7 @@ center{
             margin-bottom: auto;
             img{
                 min-width: max-content;
-                width: 120%;
+                width: 100%;
 
             }
         }
