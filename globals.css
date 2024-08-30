@@ -662,7 +662,7 @@ center{
   }
   
   body.open .navbar-burger {
-    background-image: url("./assets/close.svg~");
+    background-image: url("./assets/close.svg");
   }
  
   .menu {
