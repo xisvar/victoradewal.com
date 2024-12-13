@@ -425,7 +425,7 @@ footer{
 /* Landing.css */
 .body{
     padding: 30px 70px;
-    margin-top: 30px;
+    margin-top: 35px;
     .hero{
         .first{
             font-family: "Canela Web";
@@ -482,6 +482,7 @@ center{
     padding-top: 5px;
     padding-bottom: 40px;
     width: 100%;
+    align-items: center;
     .slide-up{
         animation-range: entry 0% cover 100%;
     }
@@ -490,8 +491,7 @@ center{
         flex-direction: column;
         img{
             width: 300px;
-            height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 10px;
         }
         label{
@@ -527,7 +527,7 @@ center{
     padding: 20px 0px;
     p{
         font-family: "GT America";
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
         a{
             border-style: solid;
@@ -575,10 +575,10 @@ center{
         padding: 30px 20px;
         .hero{
             .first{
-                font-size: 30px;
+                font-size: 42px;
             }
             .second{
-                font-size: 14px;
+                font-size: 18px;
                 width: 100%;
                 line-height: 1.5;
                 span.hg{
