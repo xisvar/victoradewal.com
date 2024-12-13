@@ -425,7 +425,8 @@ footer{
 /* Landing.css */
 .body{
     padding: 30px 70px;
-    margin-top: 35px;
+    margin-top: 30px;
+    align-items: center;
     .hero{
         .first{
             font-family: "Canela Web";
